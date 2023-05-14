@@ -1,0 +1,28 @@
+body{
+    background:#EFF1FA;
+    font-family: 'inter', sans-serif;
+}
+
+.logo{
+    margin-left: 8rem;
+    margin-top: 5rem;
+}
+
+.textIngresar{
+    border: none;
+    background:#EFF1FA;
+    font-size: 20px;
+    font-weight:100;
+}
+
+.textIngresar::placeholder{
+    color: #0A3871;
+}
+
+.header{
+    margin: 0 10 0 0;
+}
+
+.desencriptado{
+    background: white;
+}
