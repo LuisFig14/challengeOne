@@ -1,15 +1,31 @@
 body{
-    background:#EFF1FA;
-    font-family: 'inter', sans-serif;
+    background:#EFF1FA; /*Color de fondo*/
+    font-family: 'inter', sans-serif; /*fuente*/
 }
 
-.logo{
-    margin-left: 8rem;
-    margin-top: 5rem;
+.header{
+    display: grid;
+}
+
+.header1{
+    grid-column: 1;
+    margin: 40px 0 20px 80px;
+}
+
+.header2{
+    grid-column: 2;
+    text-align: left;
+    padding: 50px;
+}
+
+.principalTitle{
+    font-size:30px;
 }
 
 .textIngresar{
     border: none;
+    resize:none;
+    outline:none;
     background:#EFF1FA;
     font-size: 20px;
     font-weight:100;
@@ -19,10 +35,65 @@ body{
     color: #0A3871;
 }
 
-.header{
-    margin: 0 10 0 0;
+.encryptButton{
+    background-color: #0A3871;
+    width: 200px;
+    height: 35px;
+    border-radius: 24px;
+    color: white;
 }
 
-.desencriptado{
-    background: white;
+.decryptButton{
+    background-color: white;
+    width: 200px;
+    height: 35px;
+    border-radius: 24px;
+    color: #0A3871;
 }
+
+.principal{
+    display: grid;
+    grid-template-columns: 50%;
+}
+
+.principal1{
+    grid-column: 1;
+    text-align: center;
+}
+
+.principal2{
+    grid-column: 2;
+    background: white;
+    margin-left: 200px;
+    width: 400px;
+    height: 450px;
+    border-radius:32px;
+}
+
+.imgMuñeco{
+    padding-left: 10%;
+}
+
+
+/*Inicia Footer*/
+footer{
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 100px;
+    width: 100%;
+    background: #3051bd;
+    text-align: center;
+}
+
+.footerTitle{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footerBy{
+    color: white;
+}
+
