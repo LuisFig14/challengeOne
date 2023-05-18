@@ -7,11 +7,10 @@ function encriptar(){
 
     let x = document.getElementById("textIngresar").value;
 
-    s = x;
-
-    let text = s;
+    let text = x;
 
     document.getElementById("mostrando").innerHTML = text;
+
     document.getElementById("textIngresar").style.visibility = "hidden";
 }
 
