@@ -3,6 +3,10 @@
 //     document.getElementById("myid").style.visibility = "hidden";
 // }
 
+const textArea = document.querySelector("textArea");
+
+
+
 function encriptar(){
 
     let x = document.getElementById("textIngresar").value;

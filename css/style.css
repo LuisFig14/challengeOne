@@ -14,7 +14,7 @@ body{
 }
 
 
-.textIngresar{
+.text-area{
     border: none;
     resize:none;
     outline:none;
@@ -24,11 +24,11 @@ body{
     height: 450px;
 }
 
-.textIngresar::placeholder{
+.text-area::placeholder{
     color: #0A3871;
 }
 
-.encryptButton{
+.btn-encriptar{
     background-color: #0A3871;
     width: 200px;
     height: 35px;
@@ -36,7 +36,7 @@ body{
     color: white;
 }
 
-.decryptButton{
+.btn-desencriptar{
     background-color: white;
     width: 200px;
     height: 35px;
