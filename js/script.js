@@ -1,22 +1,37 @@
+const textArea = document.querySelector(".text-area");
+const mensaje = document.querySelector(".mensaje");
 
-// function demoDisplay() {
-//     document.getElementById("myid").style.visibility = "hidden";
-// }
+const matrizCodigo = [
+    ["e","enter"],
+    ["i", "imes"],
+    ["a", "ai"],
+    ["o", "over"],
+    ["u", "ufat"]
+]
 
-const textArea = document.querySelector("textArea");
+function btnEncriptar() {
+    const textoEncriptado = encriptar(textArea.value)
 
-
-
-function encriptar(){
-
-    let x = document.getElementById("textIngresar").value;
-
-    let text = x;
-
-    document.getElementById("mostrando").innerHTML = text;
-
-    document.getElementById("textIngresar").style.visibility = "hidden";
+    mensaje.value = textoEncriptado;
+    textArea =""; 
 }
 
+function btnDesencriptar(){
+    const textDesencriptado = desencriptar(textArea.value)
+
+    mensaje.value = textDesencriptado
+    textArea = "";
+}
+
+function encriptar(stringEncriptado) {
+    stringEncriptado = stringEncriptado.toLowerCase()
+
+    for(let i = 0; i < matrizCodigo.length; i++){
+        if(stringEncriptado.includes(matrizCodigo[i][0])){
+            stringEncriptado = stringEncriptado.replaceAll(matrizCodigo[i][0], matrizCodigo[i][1])
+        }
+    }
+    return stringEncriptado;
+}
 
 
