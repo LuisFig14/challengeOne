@@ -13,14 +13,14 @@ function btnEncriptar() {
     const textoEncriptado = encriptar(textArea.value)
 
     mensaje.value = textoEncriptado;
-    textArea =""; 
+    textArea.value = ""; 
 }
 
 function btnDesencriptar(){
     const textDesencriptado = desencriptar(textArea.value)
 
     mensaje.value = textDesencriptado
-    textArea = "";
+    textArea.value = "";
 }
 
 function encriptar(stringEncriptado) {
@@ -32,6 +32,23 @@ function encriptar(stringEncriptado) {
         }
     }
     return stringEncriptado;
+}
+
+function desencriptar(stringDesencriptado) {
+    stringDesencriptado = stringDesencriptado.toLowerCase()
+
+    for(let i = 0; i < matrizCodigo.length; i++){
+        if(stringDesencriptado.includes(matrizCodigo[i] [1])){
+            stringDesencriptado = stringDesencriptado.replaceAll(matrizCodigo[i][1], matrizCodigo [i][0]);
+        }
+    }
+    return stringDesencriptado;
+}
+
+function btnCopiar() {
+    const textoCopiado = mensaje.value;
+
+    navigator.clipboard.writeText(textoCopiado);
 }
 
 
